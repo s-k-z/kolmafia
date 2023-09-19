@@ -203,6 +203,7 @@ user	asolDeferredPoints	0
 user	asolPointsPigSkinner	0
 user	asolPointsCheeseWizard	0
 user	asolPointsJazzAgent	0
+user	assumeSnapperForAppearanceRates	false
 user	autoAbortThreshold	-0.05
 user	autoAntidote	0
 user	autoBuyPriceLimit	20000

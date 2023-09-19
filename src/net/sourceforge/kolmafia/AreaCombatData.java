@@ -124,7 +124,7 @@ public class AreaCombatData {
       }
       // If Red Snapper tracks its phylum, and is current familiar, add two to encounter pool
       if (Preferences.getString("redSnapperPhylum").equals(monsterPhylum.toString())
-          && KoLCharacter.getFamiliar().getId() == FamiliarPool.RED_SNAPPER) {
+          && (Preferences.getBoolean("assumeSnapperForAppearanceRates") || KoLCharacter.getFamiliar().getId() == FamiliarPool.RED_SNAPPER)) {
         currentWeighting += 2 * baseWeighting;
       }
       // If any relevant Daily Candle familiar-tracking potions are active, add two to the
